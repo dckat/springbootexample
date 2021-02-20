@@ -4,6 +4,7 @@ import com.springboot.example.boot.domain.posts.Posts;
 import com.springboot.example.boot.domain.posts.PostsRepository;
 import com.springboot.example.boot.web.dto.PostsSaveRequestDto;
 import com.springboot.example.boot.web.dto.PostsUpdateRequestDto;
+
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -88,7 +89,7 @@ public class PostsApiControllerTest {
 
         // when
         ResponseEntity<Long> responseEntity = restTemplate.
-                exchange(url, HttpMethod.PUT, requestEntity, Long.class);
+                             exchange(url, HttpMethod.PUT, requestEntity, Long.class);
 
         // then
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);

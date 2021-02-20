@@ -1,10 +1,11 @@
-package com.springboot.example.boot.service.posts;
+package com.springboot.example.boot.service;
 
 import com.springboot.example.boot.domain.posts.Posts;
 import com.springboot.example.boot.domain.posts.PostsRepository;
 import com.springboot.example.boot.web.dto.PostsResponseDto;
 import com.springboot.example.boot.web.dto.PostsSaveRequestDto;
 import com.springboot.example.boot.web.dto.PostsUpdateRequestDto;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
